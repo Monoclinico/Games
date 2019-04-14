@@ -1,0 +1,115 @@
+
+body {
+  margin: 0;
+  background-color: gold;
+}
+main {
+  display: block;
+  margin: 20px auto 0;
+  width: 98%;
+  height: 50%;   
+  position: relative;
+  background-color:aqua;
+  overflow: auto;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.jogadores {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.humano {
+  background-color: rgba(0,255,0,1);
+  float: left;
+}
+.pc {
+  background-color: rgba(255,0,0,1);
+  float: left;
+}
+.jogadores-nomes {
+  text-align: left;
+  color: white;
+  font-size: 30px;
+}
+.expressao {
+  display: block;
+  position: relative;
+  float: left;
+  border: none;
+  margin: 0;
+  width: 80px;
+}
+
+.pontuacao {
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+  margin: 10px 0;
+}
+.maos {
+  list-style: none;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 2px;
+}
+.maos li {
+  display: inline;
+  margin: 0;
+}
+
+.maos-img {
+  width: 30%;
+  border: 4px solid transparent;
+}
+
+
+#resultado-j, #resultado-pc {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin: 10px 0;
+}
+
+#botao-zerar {
+  clear: both;
+  display: block;
+  color: white;
+  margin: 0 auto 10px;
+  background-color: unset;
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  h1 {font-size: 40px;}
+  .jogadores-nomes {font-size: 20px;}
+  .maos-img {width:25%;}
+  .expressao {width: 50px;}
+  #resultado-j, #resultado-pc {font-size: 33px;}
+}
+@media screen and (max-width: 350px) {
+  h1 {font-size: 26px;}
+  .jogadores-nomes {clear: both;text-align: center;}
+  .maos-img {width:21%;}
+  .expressao {float: none;margin: auto}
+  #resultado-j, #resultado-pc {font-size: 26px;}
+
+}
+@media screen and (max-width: 250px) {
+  .jogadores-nomes {font-size: 15px;}
+  .maos li {display: block;margin: auto;}
+  .maos-img {width:50%;}
+  #resultado-j, #resultado-pc {font-size: 20px;}
+
+}

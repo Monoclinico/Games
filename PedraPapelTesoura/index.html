@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="jogo do Pedra Papel e Tesoura">
+  <meta name="keywords" content="jogo,game,papel,tesoura,pedra"/>
+  <meta name="author" content="Matheus Sanches Leme"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pedra | Papel | Tesoura</title>
+  <link rel="stylesheet" type="text/css" href="_estilos/estilo.css"/>
+
+</head>
+<body>
+    <main>
+      <h1>Pedra | Papel | Tesoura</h1>
+      <section class="jogadores humano">
+        <img id="expressao-j" class="expressao" src="imagens/inexpressivo.png" alt="">
+        <h2 id="jogadores-nomes-j" class="jogadores-nomes">Você</h2>
+        <p id="pontos-j" class="pontuacao">0</p>
+        <ul class="maos">
+          <li><img class="maos-img maos-img-j" src="imagens/papel.png" id="maoj-1" onclick="estadoEspera(1)" title="papel"/></li>
+          <li><img class="maos-img maos-img-j" src="imagens/pedra.png" id="maoj-2" onclick="estadoEspera(2)" title="pedra"/></li>
+          <li><img class="maos-img maos-img-j" src="imagens/tesoura.png" id="maoj-3" onclick="estadoEspera(3)" title="tesoura"/></li>
+        </ul>
+        <p id="resultado-j">---</p>
+      </section>
+      <section class="jogadores pc">
+        <img id="expressao-pc" class="expressao" src="imagens/inexpressivo.png" alt="">
+        <h2 id="jogadores-nomes-pc" class="jogadores-nomes">Computador</h2>
+        <p id="pontos-pc" class="pontuacao">0</p>
+        <ul class="maos">
+          <li><img class="maos-img maos-img-pc" src="imagens/papel.png" id="maopc-1"/></li>
+          <li><img class="maos-img maos-img-pc" src="imagens/pedra.png" id="maopc-2"/></li>
+          <li><img class="maos-img maos-img-pc" src="imagens/tesoura.png" id="maopc-3"/></li>
+        </ul>
+        <p id="resultado-pc">---</p>
+      </section>
+      <button id="botao-zerar" type="button" onclick="reiniciarTudo()" title="Zerar a Pontuação">Reiniciar</button>
+    </main> 
+    <script src="_script/script.js" type="text/javascript"></script>
+</body>
+</html>
