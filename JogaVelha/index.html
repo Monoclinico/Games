@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matheus Sanches Leme">
+    <meta name="keywords" content="game,jogo,ti tac toe,jogo da velha, X, O">
+    <meta name="description" content="jogo da velha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="_imagens/icone.ico" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="_estilo/estilo.css"/>
+  </head>
+  <body>
+    <main>
+      <div id="bloco1" class="blocos">
+        <div id="menu-opcoes">
+          <div id="opcoes1" class="opcoes">
+            <p>Jogar contra um amigo<p>
+          </div>
+          <div id="opcoes2" class="opcoes">
+            <p id="jogo-vez"></p>
+
+          </div>
+          <div id="opcoes3"class="opcoes">
+            <p id="jogo-reiniciar" onclick="reiniciarTudo()">Reiniciar</p>
+          </div>
+        </div>  
+        <div class="jogadores">
+          <div id="jogador-x" class="jogadores-xo">
+            <p>X - <span id="pontos-x">0</span></p>
+          </div>
+        </div>
+        <div class="jogadores">
+          <div id="jogador-o" class="jogadores-xo">
+            <p>O - <span id="pontos-o">0</span></p>
+          </div>
+        </div>
+      </div>
+      <div id="bloco2" class="blocos">
+        <table id="velha">
+          <tr>
+            <td id="espaco0" class="espaco"></td>
+            <td id="espaco1" class="espaco coluna2"></td>
+            <td id="espaco2" class="espaco"></td>
+          </tr>
+          <tr>
+            <td id="espaco3" class="espaco linha2"></td>
+            <td id="espaco4" class="espaco coluna2 linha2"></td>
+            <td id="espaco5" class="espaco linha2"></td>
+          </tr>
+          <tr>
+            <td id="espaco6" class="espaco"></td>
+            <td id="espaco7" class="espaco coluna2"></td>
+            <td id="espaco8" class="espaco"></td>
+          </tr>
+      
+        </table>  
+      </div>  
+    </main> 
+    <script charset="utf-8" src="_script/script.js" type="text/javascript">
+    </script> 
+  </body>
+</html>
