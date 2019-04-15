@@ -64,7 +64,7 @@ main {
 #opcoes2 {box-sizing:border-box;width:52%;border-left: 1px solid white;}
 #jogo-vez {font-size: 29px;line-height: 275%;}
 #opcoes3 {width: 15%;border-left: 1px solid white;}
-#opcoes1:hover, #opcoes3:hover {background-color: cadetblue;cursor: pointer;}
+/*#opcoes1:hover,*/ #opcoes3:hover {background-color: cadetblue;cursor: pointer;}
 
 
 /*-------------------------------------*/
